@@ -9,10 +9,7 @@ if [ ! -d "$DEB_DIR" ]; then
     exit 1
 fi
 
-echo "[+] Installing older Mesa versions from local .deb files..."
+echo "[+] Installing older Mesa versions files..."
 sudo dpkg -i $DEB_DIR/*.deb
-
-echo "[+] Fixing dependencies..."
-sudo apt install -f -y
 
 echo "[+] Mesa downgrade completed successfully!"
