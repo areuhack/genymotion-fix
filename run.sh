@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the directory where the old Mesa .deb files are stored
-DEB_DIR="./deb"
+DEB_DIR="lib"
 
 # Check if the directory exists
 if [ ! -d "$DEB_DIR" ]; then
